@@ -1,14 +1,13 @@
 import { Provider } from 'react-redux';
 import './App.css';
 
-import store  from './Store';
-import Splash from './Components/Views/Splash';
-import Signin from './Components/Views/SigninPage';
+import store from './Store';
+import Todo from './Components/Views/Todo/TodoPage';
 
 function App() {
   return (
     <Provider store={store}>
-      <Signin></Signin>
+      <Todo></Todo>
     </Provider>
   );
 }
